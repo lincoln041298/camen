@@ -1,0 +1,122 @@
+.homepagev2 {
+  margin: 0 9px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+  @media (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+  }
+  .grid-itemv2 {
+    &--size1 {
+      grid-column: span 2 / span 2;
+      img {
+        object-fit: contain;
+      }
+      @media (min-width: 375px) {
+        place-self: start;
+      }
+      @media (min-width: 1024px) {
+        border-radius: 10px;
+        width: 375px;
+        height: 253px;
+      }
+      @media (min-width: 1200px) {
+        width: 556px;
+        height: 468px;
+      }
+    }
+    &--size2 {
+      img {
+        object-fit: contain;
+      }
+      @media (min-width: 375px) {
+        margin-bottom: 17px;
+      }
+      @media (min-width: 1024px) {
+        width: 375px;
+        height: 253px;
+      }
+      @media (min-width: 1200px) {
+        margin-top: 104px;
+        width: 375px;
+        height: 253px;
+      }
+    }
+    &--size3 {
+      img {
+        object-fit: contain;
+      }
+      @media (min-width: 375px) {
+        margin-top: -50px;
+      }
+      @media (min-width: 1024px) {
+        width: 375px;
+        height: 253px;
+      }
+      @media (min-width: 1200px) {
+        width: 341px;
+        height: 357px;
+      }
+    }
+    &--size4 {
+      img {
+        object-fit: contain;
+      }
+      @media (min-width: 375px) {
+        margin-left: -2px;
+      }
+      @media (min-width: 375px) {
+        place-self: start;
+      }
+      @media (min-width: 1024px) {
+        width: 375px;
+        height: 253px;
+      }
+      @media (min-width: 1200px) {
+        width: 212px;
+        height: 225px;
+      }
+    }
+    &--size5 {
+      img {
+        object-fit: contain;
+      }
+
+      @media (min-width: 375px) {
+        place-self: start;
+      }
+      @media (min-width: 1024px) {
+        width: 375px;
+        height: 253px;
+        margin-left: 0px;
+      }
+      @media (min-width: 1200px) {
+        width: 340px;
+        height: 357px;
+      }
+    }
+    &--size6 {
+      img {
+        object-fit: contain;
+      }
+      grid-column: span 2 / span 2;
+
+      @media (min-width: 375px) {
+        place-self: start;
+        margin-top: -56px;
+      }
+      @media (min-width: 1024px) {
+        width: 375px;
+        height: 253px;
+      }
+
+      @media (min-width: 1286px) {
+        margin-top: -111px;
+        width: 723px;
+        height: 365px;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.banner-inner {
+  &__product {
+    top: 200px;
+  }
+}
+
+.banner-text {
+  &__product-text {
+    color: var(--color-primary);
+  }
+}
+.banner-product {
+  background-image: url(../../img/homepagev2/banner-product.png);
+  object-fit: cover;
+  height: 550.67px;
+  background-size: cover;
+}
+
+.product-camen {
+  margin-top: 64.33px;
+}
+
+.product-gridcore {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  &__food {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+}
