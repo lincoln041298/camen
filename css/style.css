@@ -144,7 +144,7 @@ a:hover {
           word-break: break-word; } }
 
 .see-more {
-  background-image: url("../../img/icon/bg-see-more.png");
+  background-image: url("../img/icon/bg-see-more.png");
   background-size: cover;
   display: inline-block;
   font-weight: 900;
@@ -296,7 +296,7 @@ a:hover {
       line-height: 22px; }
 
 .footer {
-  background-image: url("../../img/icon/bg-footer.png");
+  background-image: url("../img/icon/bg-footer.png");
   background-size: cover;
   background-color: #fff;
   padding-top: 130px; }
@@ -373,7 +373,7 @@ a:hover {
         line-height: 14px; } }
 
 .banner {
-  background-image: url("../../img//banner-main.png");
+  background-image: url("../img//banner-main.png");
   transform: translateY(-122px); }
   @media screen and (max-width: 992px) {
     .banner {
@@ -570,7 +570,7 @@ a:hover {
           height: 37px; } }
 
 .super-footer {
-  background-image: url("../../img/bg-food.png");
+  background-image: url("../img/bg-food.png");
   position: relative;
   z-index: 2;
   top: -10px;
