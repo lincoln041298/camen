@@ -483,25 +483,79 @@
   padding: 66px 85px;
   width: 1180px;
   height: 169px; }
+  @media (min-width: 375px) {
+    .order-confirm .thankyou-content {
+      display: none; } }
+  @media (min-width: 1024px) {
+    .order-confirm .thankyou-content {
+      display: block; } }
+  @media (min-width: 1200px) {
+    .order-confirm .thankyou-content {
+      display: block; } }
   .order-confirm .thankyou-content__title {
     font-family: "Nexablack";
     color: #00bd00;
     text-align: center;
     font-size: 26px; }
 
+@media (min-width: 375px) {
+  .order-confirm .thankyou-content-inmobile {
+    display: block;
+    background-image: url("../img/homepagev2/dasher-border-mobile.png");
+    background-size: cover;
+    margin-top: 41px;
+    padding: 20px 10px;
+    width: 382px;
+    height: 76px; }
+    .order-confirm .thankyou-content-inmobile__title {
+      font-family: "Nexablack";
+      color: #00bd00;
+      text-align: center;
+      font-size: 16px; } }
+
+@media (min-width: 1024px) {
+  .order-confirm .thankyou-content-inmobile {
+    display: none; } }
+
+@media (min-width: 1200px) {
+  .order-confirm .thankyou-content-inmobile {
+    display: none; } }
+
 .order-confirm .code {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 61px; }
+  @media (min-width: 375px) {
+    .order-confirm .code {
+      flex-direction: column;
+      margin-left: 80px;
+      margin-right: 80px; } }
+  @media (min-width: 1024px) {
+    .order-confirm .code {
+      flex-direction: row;
+      margin-left: 0px;
+      margin-right: 0px; } }
   .order-confirm .code__paying {
     text-align: center; }
-  .order-confirm .code__day {
-    border-right: 1px solid #d9d9d9;
-    border-left: 1px solid #d9d9d9;
-    padding: 0 71px;
-    margin: 0 71px;
-    text-align: center; }
+  @media (min-width: 375px) {
+    .order-confirm .code__day {
+      border-top: 1px solid #d9d9d9;
+      border-bottom: 1px solid #d9d9d9;
+      margin: 16px 0;
+      width: 100%;
+      text-align: center;
+      padding: 16px 0; } }
+  @media (min-width: 1024px) {
+    .order-confirm .code__day {
+      border-right: 1px solid #d9d9d9;
+      border-left: 1px solid #d9d9d9;
+      border-top: none;
+      border-bottom: none;
+      padding: 0px 71px;
+      margin: 0px 71px;
+      text-align: center;
+      width: inherit; } }
 
 .order-confirm .information__transfer {
   margin-top: 60px; }
@@ -514,19 +568,38 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 51px; }
+  @media (min-width: 375px) {
+    .order-confirm .information__inforbank {
+      flex-direction: column; } }
+  @media (min-width: 1024px) {
+    .order-confirm .information__inforbank {
+      flex-direction: row; } }
 
 .order-confirm .information__localbank {
   display: block; }
   .order-confirm .information__localbank--img {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-around; }
-    .order-confirm .information__localbank--img p:first-child {
-      width: 291px;
-      height: 97px; }
+    @media (min-width: 375px) {
+      .order-confirm .information__localbank--img p:first-child {
+        width: 135px;
+        height: 44px; } }
+    @media (min-width: 1024px) {
+      .order-confirm .information__localbank--img p:first-child {
+        width: 291px;
+        height: 97px; } }
     .order-confirm .information__localbank--img p:last-child {
       width: 278px;
       height: 52px; }
+      @media (min-width: 375px) {
+        .order-confirm .information__localbank--img p:last-child {
+          width: 144px;
+          height: 51px; } }
+      @media (min-width: 1024px) {
+        .order-confirm .information__localbank--img p:last-child {
+          width: 278px;
+          height: 52px; } }
 
 .order-confirm .information__qrcode {
   width: 256px;
@@ -541,13 +614,26 @@
 
 .order-confirm .detail__order {
   display: flex; }
+  @media (min-width: 375px) {
+    .order-confirm .detail__order {
+      flex-direction: column; } }
+  @media (min-width: 1024px) {
+    .order-confirm .detail__order {
+      flex-direction: row; } }
+  .order-confirm .detail__order--cover {
+    display: flex;
+    align-items: flex-start; }
   .order-confirm .detail__order--product p {
     width: 151px;
     height: 132px; }
   .order-confirm .detail__order--feature {
     margin-left: 32px; }
-    .order-confirm .detail__order--feature p {
-      font-size: 16px; }
+    @media (min-width: 375px) {
+      .order-confirm .detail__order--feature p {
+        font-size: 14px; } }
+    @media (min-width: 1024px) {
+      .order-confirm .detail__order--feature p {
+        font-size: 16px; } }
     .order-confirm .detail__order--feature p:nth-child(2) {
       margin-top: 16px;
       margin-bottom: 8px; }
@@ -556,11 +642,24 @@
   .order-confirm .detail__order--afterproduct {
     display: flex;
     align-items: flex-start; }
+    @media (min-width: 375px) {
+      .order-confirm .detail__order--afterproduct {
+        justify-content: space-between; } }
+    @media (min-width: 1024px) {
+      .order-confirm .detail__order--afterproduct {
+        margin-left: 115px; } }
     .order-confirm .detail__order--afterproduct p:first-child {
       padding-bottom: 16px; }
   .order-confirm .detail__order--delivery {
-    margin-left: 115px;
     text-align: center; }
+    .order-confirm .detail__order--delivery p:first-child {
+      color: #717171; }
+    @media (min-width: 375px) {
+      .order-confirm .detail__order--delivery {
+        margin-left: 0px; } }
+    @media (min-width: 1024px) {
+      .order-confirm .detail__order--delivery {
+        margin-left: 115px; } }
 
 .order-confirm .payment {
   margin-top: 33.5px;
@@ -588,3 +687,9 @@
   font-size: 26px;
   text-transform: uppercase;
   margin-top: 56.5px; }
+  @media (min-width: 375px) {
+    .title-transfer {
+      font-size: 14px; } }
+  @media (min-width: 1024px) {
+    .title-transfer {
+      font-size: 26px; } }
