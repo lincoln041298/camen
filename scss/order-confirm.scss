@@ -1,0 +1,161 @@
+.order-confirm {
+  .thankyou-content {
+    background-image: url("../img/homepagev2/dasher-border.png");
+    background-size: cover;
+    margin-top: 41px;
+    padding: 66px 85px;
+    width: 1180px;
+    height: 169px;
+    &__title {
+      font-family: "Nexablack";
+      color: #00bd00;
+      text-align: center;
+      font-size: 26px;
+    }
+  }
+
+  .code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 61px;
+    &__paying {
+      text-align: center;
+    }
+    &__day {
+      border-right: 1px solid #d9d9d9;
+      border-left: 1px solid #d9d9d9;
+      padding: 0 71px;
+      margin: 0 71px;
+      text-align: center;
+    }
+  }
+
+  .information {
+    &__transfer {
+      margin-top: 60px;
+
+      p:nth-child(2) {
+        margin-top: 20px;
+        margin-bottom: 15px;
+      }
+    }
+
+    &__inforbank {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 51px;
+    }
+
+    &__localbank {
+      display: block;
+      &--img {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        p:first-child {
+          width: 291px;
+          height: 97px;
+        }
+        p:last-child {
+          width: 278px;
+          height: 52px;
+        }
+      }
+    }
+
+    &__ofbanking {
+    }
+    &__qrcode {
+      width: 256px;
+      height: 256px;
+    }
+  }
+
+  .detail {
+    &__afterpackage {
+      display: flex;
+      border-top: 1px solid #c4c4c4;
+      border-bottom: 1px solid #c4c4c4;
+      margin-top: 22.5px;
+      padding: 46px 0;
+    }
+
+    &__order {
+      display: flex;
+
+      &--product {
+        p {
+          width: 151px;
+          height: 132px;
+        }
+      }
+      &--feature {
+        margin-left: 32px;
+        p {
+          font-size: 16px;
+        }
+        p:nth-child(2) {
+          margin-top: 16px;
+          margin-bottom: 8px;
+        }
+
+        p:last-child {
+          font-size: 14px;
+        }
+      }
+      &--afterproduct {
+        display: flex;
+        align-items: flex-start;
+
+        p:first-child {
+          padding-bottom: 16px;
+        }
+        // p {
+
+        // }
+      }
+      &--delivery {
+        margin-left: 115px;
+        text-align: center;
+      }
+    }
+  }
+
+  .payment {
+    margin-top: 33.5px;
+    margin-bottom: 179px;
+    text-align: -webkit-right;
+    &__core {
+      display: flex;
+      flex-direction: column;
+      width: 409px;
+    }
+    &__money {
+      display: flex;
+      margin-top: 31px;
+      justify-content: space-between;
+    }
+    &__money:first-child {
+      margin-top: 0px;
+    }
+
+    &__line {
+      border-bottom: 1px solid #c4c4c4;
+      margin-top: 29px;
+      margin-bottom: 16px;
+    }
+
+    &__needpay {
+      color: #c9160d;
+    }
+  }
+}
+
+.title-transfer {
+  font-family: "Nexablack";
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-top: 56.5px;
+}
