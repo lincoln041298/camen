@@ -1,7 +1,3 @@
-@font-face {
-  font-family: 'Nexablack';
-  src: url("../libs/font-last/SVN-Nexa Rust Sans Black.ttf") format("truetype"); }
-
 :root {
   --color-primary: #c9160d;
   --color-primary-yellow: #7b050a; }
