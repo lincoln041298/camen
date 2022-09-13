@@ -752,3 +752,9 @@
   background-size: cover;
   height: 571px;
   margin-top: -6rem; }
+  .aboutus .banner-aboutus .banner-text__aboutus {
+    padding-top: 20rem;
+    padding-left: 5rem;
+    max-width: 570px; }
+    .aboutus .banner-aboutus .banner-text__aboutus h1 {
+      color: #ffffff; }
