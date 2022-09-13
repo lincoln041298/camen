@@ -711,3 +711,8 @@
   @media (min-width: 1024px) {
     .title-transfer {
       font-size: 26px; } }
+
+.aboutus .banner-aboutus {
+  background-image: url("../img/homepagev2/about-us.png");
+  background-size: cover;
+  height: 571px; }
