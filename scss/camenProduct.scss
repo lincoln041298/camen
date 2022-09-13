@@ -1,10 +1,5 @@
-  main,
-  .product-camen
-  {
-    padding-top: 35px;
-  }
-
 .product-camen {
+ margin-top: -5rem;
   &__title {
     color: var(--color-primary);
     text-transform: uppercase;
@@ -90,6 +85,7 @@
   }
 
   .banner-product {
+  
     background-image: url(../img/homepagev2/banner-product.png);
     object-fit: cover;
 
