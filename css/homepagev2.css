@@ -259,6 +259,24 @@
     text-align: center;
     margin-top: 26px; }
 
+.porridge {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 17px; }
+  .porridge__leftside {
+    background-image: url("../img/homepagev2/banneranimation.png");
+    background-size: cover;
+    grid-column: span 2 / span 2;
+    height: 406px;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a; }
+  .porridge__rightside {
+    grid-column: span 1 / span 1; }
+  .porridge__imgleft {
+    width: 389.03px;
+    height: 322px;
+    transform: translateX(-74px); }
+
 .contact {
   padding-top: 20px; }
   .contact .banner-inner__contact {
