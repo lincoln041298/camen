@@ -268,9 +268,14 @@
 
 .porridge {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
   column-gap: 17px;
   margin-top: 33px; }
+  @media (min-width: 375px) {
+    .porridge {
+      grid-template-columns: repeat(1, minmax(0, 1fr)); } }
+  @media (min-width: 1024px) {
+    .porridge {
+      grid-template-columns: repeat(3, minmax(0, 1fr)); } }
   .porridge__leftside {
     background-image: url("../img/homepagev2/banneranimation.png");
     background-size: cover;
@@ -286,9 +291,8 @@
       color: var(--color-primary);
       text-transform: uppercase;
       text-align: center;
-      padding: 0 160px; }
-  .porridge__rightside {
-    grid-column: span 1 / span 1; }
+      padding: 0 160px;
+      padding-top: 20px; }
   .porridge__bannerchaobot {
     background-image: url("../img/homepagev2/bannerchaobot.png");
     background-size: cover;
@@ -326,29 +330,131 @@
       width: 336px;
       height: 384.54px; }
     .porridge .toomany_product__context {
-      flex: 0 0 51%; }
+      flex: 0 0 56%; }
       .porridge .toomany_product__context p:first-child {
         font-size: 20px;
         font-weight: 900;
         color: var(--color-primary);
         text-transform: uppercase;
-        text-align: center; }
+        text-align: start; }
       .porridge .toomany_product__context p:nth-child(2) {
         padding-top: 21px; }
       .porridge .toomany_product__context p:nth-child(3) {
         padding-top: 21px; }
       .porridge .toomany_product__context p:last-child {
         padding-top: 21px; }
-  .porridge .feeling-customer__content h3 {
-    font-size: 20px;
-    font-weight: 900;
-    color: var(--color-primary);
-    text-transform: uppercase;
-    text-align: center; }
-  .porridge .feeling-customer__content p {
-    padding-top: 23px;
-    font-size: 16px;
-    font-weight: 400; }
+  .porridge .feeling-customer__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .porridge .feeling-customer__content h3 {
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--color-primary);
+      text-transform: uppercase;
+      text-align: center; }
+    .porridge .feeling-customer__content p {
+      padding-top: 23px;
+      font-size: 16px;
+      font-weight: 400;
+      padding: 0 130px;
+      text-align: center;
+      padding-bottom: 24px; }
+  .porridge .feeling-customer__img {
+    display: flex;
+    column-gap: 5px; }
+  .porridge .button-chaobot {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    column-gap: 30px; }
+    .porridge .button-chaobot .arrow-left-chaobot {
+      color: var(--color-primary);
+      font-size: 20px;
+      padding: 5px 5px;
+      border-radius: 9999px;
+      cursor: pointer; }
+    .porridge .button-chaobot .arrow-left-chaobot:hover {
+      color: #ffffff;
+      background-color: var(--color-primary);
+      font-size: 20px;
+      padding: 5px 5px;
+      border-radius: 9999px;
+      cursor: pointer; }
+    .porridge .button-chaobot .arrow-right-chaobot {
+      color: var(--color-primary);
+      font-size: 20px;
+      padding: 5px 5px;
+      border-radius: 9999px;
+      cursor: pointer; }
+    .porridge .button-chaobot .arrow-right-chaobot:hover {
+      color: #ffffff;
+      background-color: var(--color-primary);
+      font-size: 20px;
+      padding: 5px 5px;
+      border-radius: 9999px;
+      cursor: pointer; }
+  .porridge__rightside {
+    font-family: "SVN-Gotham", sans-serif;
+    grid-column: span 1 / span 1;
+    width: 431px;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
+    max-height: 100%;
+    padding: 23px 16px; }
+    .porridge__rightside .line-form {
+      border-top: 1px solid #c4c4c4;
+      margin-top: 16px;
+      margin-bottom: 24px; }
+    .porridge__rightside h3 {
+      font-family: "SVN-Gotham", sans-serif;
+      font-weight: 600;
+      font-size: 16px; }
+    .porridge__rightside .form-chaobot__information {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .porridge__rightside .form-chaobot__information label {
+        font-size: 16px;
+        font-weight: 400px;
+        margin-bottom: 8px; }
+      .porridge__rightside .form-chaobot__information input {
+        padding: 15px 8px;
+        border-radius: 10px;
+        border: 1px solid #c4c4c4; }
+      .porridge__rightside .form-chaobot__information input::placeholder {
+        font-size: 14px;
+        font-weight: 400; }
+    .porridge__rightside .form-chaobot__selftinfor {
+      display: flex;
+      column-gap: 20px; }
+      .porridge__rightside .form-chaobot__selftinfor input {
+        width: 190px; }
+    .porridge__rightside .form-chaobot__offcial {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 16px;
+      position: relative; }
+      .porridge__rightside .form-chaobot__offcial p {
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        right: 15px;
+        bottom: 15px; }
+  .porridge .chaobot-img {
+    width: 50%; }
+  .porridge .chaobot-img.feeling-img {
+    text-align: center;
+    width: 165px; }
+  .porridge__banner-chaobotright-side {
+    background-image: url("../img/homepagev2/bannerchaobotrightside.png");
+    background-size: cover;
+    height: 761.25px;
+    width: 429px;
+    margin-top: 40px; }
 
 .contact {
   padding-top: 20px; }
@@ -445,16 +551,13 @@
         margin-top: 10px;
         border-radius: 0.375rem;
         border: 1px solid #e2e8f0;
-        padding: 13px 0;
-        padding-left: 16px; }
+        padding: 13px 16px; }
         @media (min-width: 375px) {
           .contact .contact-form__validate-form--input {
-            padding: 9px 0;
-            padding-left: 8px; } }
+            padding: 9px 8px; } }
         @media (min-width: 1024px) {
           .contact .contact-form__validate-form--input {
-            padding: 13px 0;
-            padding-left: 16px; } }
+            padding: 13px 16px; } }
       .contact .contact-form__validate-form--input::placeholder {
         font-size: 14px; }
       .contact .contact-form__validate-form--comment {

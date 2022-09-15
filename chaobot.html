@@ -25,6 +25,13 @@
       rel="stylesheet"
       href="libs/OwlCarousel/assets/owl.theme.green.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/homepagev2.css" />
@@ -85,6 +92,7 @@
           <div class="container">
             <div class="porridge">
               <div class="porridge__leftside">
+                <p><img src="./img/homepagev2/fake-line.png" alt="" /></p>
                 <div class="porridge__topchaobot">
                   <h1>Cháo bột cá lóc Đóng gói ngon như mạ nấu</h1>
                   <p><img src="./img/homepagev2/chaobot.png" alt="" /></p>
@@ -92,7 +100,9 @@
                 <div class="porridge__bannerchaobot">
                   <div class="porridge__bannerchaobot--text">
                     <h2>Cháo bột cá lóc là gì</h2>
-                    <p><img src="./img/homepagev2/linechaobot.png" alt="" /></p>
+                    <p class="chaobot-img">
+                      <img src="./img/homepagev2/linechaobot.png" alt="" />
+                    </p>
                     <p>
                       Cháo bột hay bánh canh cá lóc là đặc sản nổi tiếng của
                       mảnh đất Quảng Trị. Đây là món ăn must-try khi bạn đến du
@@ -116,16 +126,22 @@
                   </p>
                   <div class="toomany_product__context">
                     <p>Thành phần của cháo bột cá lóc</p>
-                    <p>
+                    <div class="chaobot-img">
+                      <img src="./img/homepagev2/yallwline.png" alt="" />
+                    </div>
+                    <div>
                       Thành phần sản phẩm bao gồm: sợi bánh canh bột gạo, cá lóc
                       đồng, nước sốt, hành lá sấy khô.
-                    </p>
+                    </div>
                   </div>
                 </div>
 
                 <div class="toomany_product">
                   <div class="toomany_product__context">
                     <p>Hướng dẫn sử dụng</p>
+                    <div class="chaobot-img">
+                      <img src="./img/homepagev2/yallwline.png" alt="" />
+                    </div>
                     <p>
                       Bước 1: Hoà tan gói sốt với 400ml nước, đun sôi. Khi nước
                       sôi, cho sợi bánh canh vào.
@@ -149,6 +165,9 @@
                 <div class="feeling-customer">
                   <div class="feeling-customer__content">
                     <h3>Cảm Nhận Khách Hàng</h3>
+                    <div class="chaobot-img feeling-img">
+                      <img src="./img/homepagev2/yallwline.png" alt="" />
+                    </div>
                     <p>
                       Cháo bột cá lóc đóng gói giữ nguyên hương vị giống như
                       cháo bột thưởng thức tại quán. Khách hàng sẽ cảm nhận được
@@ -168,12 +187,88 @@
                       <img src="./img/homepagev2/chaobotproduct3.png" alt="" />
                     </p>
                   </div>
+
+                  <div class="button-chaobot">
+                    <i
+                      class="fa-solid fa-arrow-left-long arrow-left-chaobot"
+                    ></i>
+                    <i
+                      class="fa-solid fa-arrow-right-long arrow-right-chaobot"
+                    ></i>
+                  </div>
                 </div>
                 <!-- <h1>Cháo bột cá lóc đóng gói ngon như mạ nấu</h1> -->
               </div>
-              <div class="porridge__rightside">
-                <h3>Đặt hàng cháo bột cá lóc đóng gói</h3>
+              <div class="porridge__extendright">
+                <div class="porridge__rightside">
+                  <div class="porridge__form">
+                    <h3>Đặt hàng cháo bột cá lóc đóng gói</h3>
+                    <p class="line-form"></p>
+                    <form action="#" class="form-chaobot">
+                      <div class="form-chaobot__information">
+                        <div class="form-chaobot__selftinfor">
+                          <div class="form-chaobot__selftinfor--name">
+                            <label for="">Họ và tên</label>
+                            <input type="text" placeholder="Nhập họ và tên" />
+                          </div>
+                          <div class="form-chaobot__selftinfor--phone">
+                            <label for="">Số điện thoại nhận hàng</label>
+                            <input type="text" placeholder="Nhập số điện thoại" />
+                          </div>
+                        </div>
+  
+                        <div class="form-chaobot__offcial">
+                          <label for="">Email</label>
+                          <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Nhập địa chỉ email"
+                          />
+                        </div>
+                        <div class="form-chaobot__offcial">
+                          <label for="">Khu vực</label>
+                          <input
+                            type="text"
+                            name="location-form"
+                            id="location-form"
+                            placeholder="Nhập Tỉnh/Thành phố, Quận/Huyện"
+                          />
+                          <p>
+                            <img src="./img/homepagev2/arrowbottom.png" alt="">
+                          </p>
+                        </div>
+                        <div class="form-chaobot__offcial">
+                          <label for="">Phường/xã</label>
+                          <input
+                            type="text"
+                            name="distict-form"
+                            id="district-form"
+                            placeholder="Nhập Phường/xã"
+                          />
+                          <p>
+                            <img src="./img/homepagev2/arrowbottom.png" alt="">
+                          </p>
+                        </div>
+                        <div class="form-chaobot__offcial">
+                          <label for="">Địa chỉ</label>
+                          <input
+                            type="text"
+                            name="street-form"
+                            id="street-form"
+                            placeholder="Nhập số nhà + tên đường"
+                          />
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                 
+                </div>
+                <div class="porridge__banner-chaobotright-side">
+  
+                </div>
               </div>
+             
             </div>
           </div>
         </section>
