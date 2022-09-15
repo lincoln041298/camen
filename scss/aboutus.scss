@@ -1,0 +1,19 @@
+.aboutus {
+  .banner-aboutus {
+    background-image: url("../img/homepagev2/about-us.png");
+    background-size: cover;
+    height: 571px;
+    margin-top: -6rem;
+
+    .banner-text {
+      &__aboutus {
+        padding-top: 20rem;
+        padding-left: 5rem;
+        max-width: 570px;
+        h1 {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
