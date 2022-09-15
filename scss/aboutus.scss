@@ -9,7 +9,7 @@
     }
     @media (min-width: 1024px) {
       height: 571px;
-      margin-top: -5.1rem;
+      margin-top: -6rem;
     }
     &__text {
       padding-top: 300px;
@@ -143,7 +143,7 @@
       height: 632.85px;
     }
   }
-  
+
   .charity {
     display: flex;
     column-gap: 74px;
@@ -168,12 +168,12 @@
   }
 
   .employee {
-    background-image: url('../img/homepagev2/bgemployee.png');
+    background-image: url("../img/homepagev2/bgemployee.png");
     height: 1587px;
-    margin-bottom: -22px;
+    margin-bottom: -80px;
     &__aboutus {
       padding-top: 334px;
-     
+
       h2 {
         text-transform: uppercase;
         color: var(--color-primary);
@@ -185,8 +185,7 @@
 
     &__core {
       grid-column: span 1 / span 1;
-   
-    };
+    }
 
     &__position {
       display: grid;

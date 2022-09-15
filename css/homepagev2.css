@@ -147,14 +147,22 @@
           height: 20px; } }
 
 .product-camen {
-  margin-top: 64.33px; }
+  margin-top: -5rem; }
   .product-camen__title {
     color: var(--color-primary);
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 65px; }
+    text-align: center; }
+    @media (min-width: 375px) {
+      .product-camen__title {
+        font-size: 14px;
+        margin-top: 27px;
+        margin-bottom: 27px; } }
+    @media (min-width: 1024px) {
+      .product-camen__title {
+        font-size: 30px;
+        margin-top: 64.33px;
+        margin-bottom: 65px; } }
 
 @media (min-width: 375px) {
   .product-camen .banner-inner__product {
@@ -227,14 +235,17 @@
   margin-top: 20px; }
   @media (min-width: 375px) {
     .product-camen .product-gridcore {
-      grid-template-columns: repeat(1, minmax(0, 1fr)); } }
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      margin: 0 67px; } }
   @media (min-width: 1024px) {
     .product-camen .product-gridcore {
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      margin-bottom: 170px; } }
+      margin-bottom: 170px;
+      margin: 0 0px; } }
   @media (min-width: 1286px) {
     .product-camen .product-gridcore {
-      grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin: 0 0px; } }
   .product-camen .product-gridcore__food {
     grid-column: span 1 / span 1;
     position: relative; }
@@ -258,20 +269,52 @@
 .porridge {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  column-gap: 17px; }
+  column-gap: 17px;
+  margin-top: 33px; }
   .porridge__leftside {
     background-image: url("../img/homepagev2/banneranimation.png");
     background-size: cover;
     grid-column: span 2 / span 2;
-    height: 406px;
     border-radius: 0.5rem;
-    box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a; }
+    box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
+    max-height: 100%; }
+    .porridge__leftside p {
+      background-size: cover; }
+    .porridge__leftside h1 {
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--color-primary);
+      text-transform: uppercase;
+      text-align: center;
+      padding: 0 160px; }
   .porridge__rightside {
     grid-column: span 1 / span 1; }
-  .porridge__imgleft {
-    width: 389.03px;
-    height: 322px;
-    transform: translateX(-74px); }
+  .porridge__bannerchaobot {
+    background-image: url("../img/homepagev2/bannerchaobot.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 456px; }
+    .porridge__bannerchaobot--text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-self: center;
+      padding-left: 55px;
+      padding-top: 55px; }
+      .porridge__bannerchaobot--text h2 {
+        font-size: 26px;
+        font-weight: 900;
+        color: var(--color-primary);
+        text-transform: uppercase;
+        text-align: center; }
+    .porridge__bannerchaobot--img {
+      padding-top: 50px;
+      width: 326px;
+      height: 326px; }
+      .porridge__bannerchaobot--img img {
+        height: 100%; }
 
 .contact {
   padding-top: 20px; }
@@ -757,7 +800,7 @@
   @media (min-width: 1024px) {
     .aboutus .banner-aboutus {
       height: 571px;
-      margin-top: -5.1rem; } }
+      margin-top: -6rem; } }
   .aboutus .banner-aboutus__text {
     padding-top: 300px; }
     .aboutus .banner-aboutus__text h1 {
@@ -877,7 +920,7 @@
 .aboutus .employee {
   background-image: url("../img/homepagev2/bgemployee.png");
   height: 1587px;
-  margin-bottom: -22px; }
+  margin-bottom: -80px; }
   .aboutus .employee__aboutus {
     padding-top: 334px; }
     .aboutus .employee__aboutus h2 {
