@@ -3,16 +3,205 @@
     background-image: url("../img/homepagev2/about-us.png");
     background-size: cover;
     height: 571px;
-    margin-top: -6rem;
+
+    @media (min-width: 375px) {
+      height: 159px;
+    }
+    @media (min-width: 1024px) {
+      height: 571px;
+      margin-top: -6rem;
+    }
+    &__text {
+      padding-top: 300px;
+      h1 {
+        color: #ffffff;
+      }
+      p {
+        color: #ffffff;
+      }
+    }
 
     .banner-text {
-      &__aboutus {
-        padding-top: 20rem;
-        padding-left: 5rem;
-        max-width: 570px;
+      width: 100%;
+      max-width: 550px;
+      flex-shrink: 0;
+    }
+  }
+
+  .about-me {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width: 375px) {
+      flex-direction: column;
+    }
+    @media (min-width: 1024px) {
+      flex-direction: row;
+    }
+    &__img {
+      width: 443.45px;
+      height: 332px;
+    }
+    &__content {
+      h2 {
+        text-transform: uppercase;
+        color: var(--color-primary);
+        font-weight: 900;
+      }
+
+      p {
+        padding-top: 24px;
+      }
+      flex: 0 0 37%;
+    }
+  }
+
+  .mission {
+    background-image: url("../img/homepagev2/aboutusmission.png");
+    background-size: cover;
+    height: 853px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__text {
+      padding: 121px 281px 69px 281px;
+    }
+    h2 {
+      text-transform: uppercase;
+      color: var(--color-primary);
+      font-weight: 900;
+      text-align: center;
+    }
+    h3 {
+      text-transform: uppercase;
+      color: #333;
+      font-weight: 900;
+      text-align: center;
+      margin-top: 8px;
+      margin-bottom: 24px;
+    }
+    p {
+      text-align: center;
+    }
+    &__box {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__ontop {
+      display: flex;
+      column-gap: 57px;
+
+      &--qualitybox {
+        padding: 51px 30px 69px 30px;
+        background-color: #ffffff;
+        width: 355px;
+        height: 238px;
+        border-radius: 0.375rem;
+        box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
         h1 {
-          color: #ffffff;
+          font-size: 26px;
         }
+      }
+    }
+
+    &__onbottom {
+      display: flex;
+      column-gap: 57px;
+      margin-top: 34px;
+      justify-content: center;
+    }
+  }
+
+  .roundtofinal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (min-width: 375px) {
+      flex-direction: column;
+    }
+    @media (min-width: 1024px) {
+      flex-direction: row;
+    }
+
+    &__content {
+      flex: 0 0 40%;
+      h2 {
+        text-transform: uppercase;
+        color: var(--color-primary);
+        font-weight: 900;
+      }
+      p {
+        padding-top: 24px;
+      }
+    }
+
+    &__img {
+      width: 525px;
+      height: 632.85px;
+    }
+  }
+
+  .charity {
+    display: flex;
+    column-gap: 74px;
+    margin-top: 83px;
+    &__support {
+      font-size: 16px;
+      p {
+        img {
+          height: 100%;
+        }
+      }
+      p:first-child {
+        width: 365px;
+        height: 375px;
+      }
+      p:nth-child(2) {
+        font-weight: 900;
+        padding-top: 16px;
+        padding-bottom: 8px;
+      }
+    }
+  }
+
+  .employee {
+    background-image: url("../img/homepagev2/bgemployee.png");
+    height: 1587px;
+    margin-bottom: -80px;
+    &__aboutus {
+      padding-top: 334px;
+
+      h2 {
+        text-transform: uppercase;
+        color: var(--color-primary);
+        font-weight: 900;
+        padding-bottom: 70px;
+        text-align: center;
+      }
+    }
+
+    &__core {
+      grid-column: span 1 / span 1;
+    }
+
+    &__position {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      row-gap: 40px;
+      place-items: center;
+    }
+    &__text {
+      padding: 31px 5px 42px 5px;
+      background-color: #ffffff;
+      text-align: center;
+      p:first-child {
+        text-transform: uppercase;
+        color: var(--color-primary);
+        font-weight: 900;
+        font-size: 16px;
       }
     }
   }
