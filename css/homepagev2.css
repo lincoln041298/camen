@@ -267,15 +267,16 @@
     margin-top: 26px; }
 
 .porridge {
-  display: grid;
-  column-gap: 17px;
-  margin-top: 33px; }
+  display: grid; }
   @media (min-width: 375px) {
     .porridge {
-      grid-template-columns: repeat(1, minmax(0, 1fr)); } }
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      row-gap: 17px; } }
   @media (min-width: 1024px) {
     .porridge {
-      grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      column-gap: 17px;
+      margin-top: 33px; } }
   .porridge__leftside {
     background-image: url("../img/homepagev2/banneranimation.png");
     background-size: cover;
@@ -286,28 +287,51 @@
     .porridge__leftside p {
       background-size: cover; }
     .porridge__leftside h1 {
-      font-size: 26px;
       font-weight: 900;
       color: var(--color-primary);
       text-transform: uppercase;
       text-align: center;
-      padding: 0 160px;
       padding-top: 20px; }
+      @media (min-width: 375px) {
+        .porridge__leftside h1 {
+          font-size: 14px;
+          padding: 19px 74px; } }
+      @media (min-width: 1024px) {
+        .porridge__leftside h1 {
+          padding: 0 160px;
+          font-size: 26px; } }
+  @media (min-width: 375px) {
+    .porridge__topchaobot {
+      margin-top: 0px; } }
+  @media (min-width: 1024px) {
+    .porridge__topchaobot {
+      margin-top: 32px; } }
   .porridge__bannerchaobot {
     background-image: url("../img/homepagev2/bannerchaobot.png");
     background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 550px; }
+    justify-content: space-between; }
+    @media (min-width: 375px) {
+      .porridge__bannerchaobot {
+        height: 300px; } }
+    @media (min-width: 1024px) {
+      .porridge__bannerchaobot {
+        height: 550px; } }
     .porridge__bannerchaobot--text {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-self: center;
-      padding-left: 55px;
-      padding-top: 55px;
       flex: 0 0 43%; }
+      @media (min-width: 375px) {
+        .porridge__bannerchaobot--text {
+          padding-left: 20px;
+          padding-top: 55px; } }
+      @media (min-width: 1024px) {
+        .porridge__bannerchaobot--text {
+          padding-left: 55px;
+          padding-top: 55px; } }
       .porridge__bannerchaobot--text h2 {
         font-size: 20px;
         font-weight: 900;
@@ -315,9 +339,15 @@
         text-transform: uppercase;
         text-align: center; }
     .porridge__bannerchaobot--img {
-      padding-top: 50px;
-      width: 326px;
-      height: 326px; }
+      padding-top: 50px; }
+      @media (min-width: 375px) {
+        .porridge__bannerchaobot--img {
+          width: 155px;
+          height: 155px; } }
+      @media (min-width: 1024px) {
+        .porridge__bannerchaobot--img {
+          width: 326px;
+          height: 326px; } }
       .porridge__bannerchaobot--img img {
         height: 100%; }
   .porridge .toomany_product {
@@ -328,39 +358,62 @@
     padding: 0 20px; }
     .porridge .toomany_product__img {
       width: 336px;
-      height: 384.54px; }
-    .porridge .toomany_product__context {
-      flex: 0 0 56%; }
-      .porridge .toomany_product__context p:first-child {
-        font-size: 20px;
-        font-weight: 900;
-        color: var(--color-primary);
-        text-transform: uppercase;
-        text-align: start; }
-      .porridge .toomany_product__context p:nth-child(2) {
-        padding-top: 21px; }
-      .porridge .toomany_product__context p:nth-child(3) {
-        padding-top: 21px; }
-      .porridge .toomany_product__context p:last-child {
-        padding-top: 21px; }
+      height: 384.54px;
+      display: flex;
+      align-items: center; }
+    @media (min-width: 375px) {
+      .porridge .toomany_product__context {
+        flex: 0 0 50%; } }
+    @media (min-width: 1024px) {
+      .porridge .toomany_product__context {
+        flex: 0 0 56%; } }
+    .porridge .toomany_product__context p:first-child {
+      font-weight: 900;
+      color: var(--color-primary);
+      text-transform: uppercase;
+      text-align: start; }
+      @media (min-width: 375px) {
+        .porridge .toomany_product__context p:first-child {
+          font-size: 16px; } }
+      @media (min-width: 1024px) {
+        .porridge .toomany_product__context p:first-child {
+          font-size: 20px; } }
+    .porridge .toomany_product__context p:nth-child(2) {
+      padding-top: 21px; }
+    .porridge .toomany_product__context p:nth-child(3) {
+      padding-top: 21px; }
+    .porridge .toomany_product__context p:nth-child(4) {
+      padding-top: 21px; }
+    .porridge .toomany_product__context p:last-child {
+      padding-top: 21px; }
   .porridge .feeling-customer__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
     .porridge .feeling-customer__content h3 {
-      font-size: 20px;
       font-weight: 900;
       color: var(--color-primary);
       text-transform: uppercase;
       text-align: center; }
+      @media (min-width: 375px) {
+        .porridge .feeling-customer__content h3 {
+          font-size: 16px; } }
+      @media (min-width: 1024px) {
+        .porridge .feeling-customer__content h3 {
+          font-size: 20px; } }
     .porridge .feeling-customer__content p {
       padding-top: 23px;
       font-size: 16px;
       font-weight: 400;
-      padding: 0 130px;
       text-align: center;
       padding-bottom: 24px; }
+      @media (min-width: 375px) {
+        .porridge .feeling-customer__content p {
+          padding: 0 17px; } }
+      @media (min-width: 1024px) {
+        .porridge .feeling-customer__content p {
+          padding: 0 130px; } }
   .porridge .feeling-customer__img {
     display: flex;
     column-gap: 5px; }
@@ -407,6 +460,12 @@
       border-top: 1px solid #c4c4c4;
       margin-top: 16px;
       margin-bottom: 24px; }
+    @media (min-width: 375px) {
+      .porridge__rightside {
+        width: 100%; } }
+    @media (min-width: 1024px) {
+      .porridge__rightside {
+        width: 431px; } }
     .porridge__rightside h3 {
       font-family: "SVN-Gotham", sans-serif;
       font-weight: 600;
@@ -429,9 +488,34 @@
         font-weight: 400; }
     .porridge__rightside .form-chaobot__selftinfor {
       display: flex;
-      column-gap: 20px; }
+      column-gap: 20px;
+      width: 100%; }
+      @media (min-width: 375px) {
+        .porridge__rightside .form-chaobot__selftinfor {
+          flex-direction: column; } }
+      @media (min-width: 1024px) {
+        .porridge__rightside .form-chaobot__selftinfor {
+          flex-direction: row; } }
       .porridge__rightside .form-chaobot__selftinfor input {
         width: 190px; }
+        @media (min-width: 375px) {
+          .porridge__rightside .form-chaobot__selftinfor input {
+            width: 100%; } }
+        @media (min-width: 1024px) {
+          .porridge__rightside .form-chaobot__selftinfor input {
+            width: 190px; } }
+      .porridge__rightside .form-chaobot__selftinfor--name {
+        display: flex;
+        flex-direction: column; }
+      .porridge__rightside .form-chaobot__selftinfor--phone {
+        display: flex;
+        flex-direction: column; }
+        @media (min-width: 375px) {
+          .porridge__rightside .form-chaobot__selftinfor--phone {
+            margin-top: 16px; } }
+        @media (min-width: 1024px) {
+          .porridge__rightside .form-chaobot__selftinfor--phone {
+            margin-top: 0px; } }
     .porridge__rightside .form-chaobot__offcial {
       width: 100%;
       display: flex;
@@ -450,11 +534,26 @@
     text-align: center;
     width: 165px; }
   .porridge__banner-chaobotright-side {
-    background-image: url("../img/homepagev2/bannerchaobotrightside.png");
-    background-size: cover;
-    height: 761.25px;
-    width: 429px;
     margin-top: 40px; }
+    @media (min-width: 375px) {
+      .porridge__banner-chaobotright-side {
+        background-image: url("../img/homepagev2/responsivebannerchaobot.png");
+        background-size: cover;
+        width: 100%;
+        height: 600px; } }
+    @media (min-width: 1024px) {
+      .porridge__banner-chaobotright-side {
+        background-image: url("../img/homepagev2/bannerchaobotrightside.png");
+        background-size: cover;
+        height: 761.25px;
+        width: 429px; } }
+
+.test .item {
+  color: #333;
+  width: 150px;
+  height: 150px;
+  opacity: 1;
+  z-index: 100000; }
 
 .contact {
   padding-top: 20px; }
